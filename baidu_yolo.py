@@ -6,10 +6,10 @@ import requests
 import os
 
 def baidu_ppyolos(image_path1, image_path2):
-    API_URL = 'https://y0n6m6p3qeo9icz7.aistudio-hub.baidu.com/object-detection'
-    #API_URL = "https://s2g6s8ob0359jfu0.aistudio-hub.baidu.com/object-detection"
+    API_URL = 'xxxxxxxxxxxxxx'
+   
     # 请前往 https://aistudio.baidu.com/index/accessToken 查看"访问令牌"并替换
-    TOKEN = "6382cad74c452f2aea435944da565988fe4c38a2"
+    TOKEN = "xxxxxxxxxxxxxxxxxxxxx"
 
     # Determine the predict folder number
     base_dir = "model_runs_results/baidu_yolo_runs"
@@ -78,4 +78,5 @@ if __name__ == '__main__':
     image1 = "upload_images/1754984861/image_0.jpg"
     image2 = "upload_images/1754984861/image_2.jpg"
     black,guo_len,yolo_save_path=baidu_ppyolos(image1,image2)
+
     print("yolo_output_image_path:",yolo_save_path)
