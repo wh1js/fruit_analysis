@@ -3,9 +3,9 @@ import requests
 import os
 
 def baidu_seg_two_images(image_path1, image_path2):
-    API_URL = "https://z179nf7b7atc6dm5.aistudio-hub.baidu.com/instance-segmentation"
+    API_URL = "xxxxxxxxxx"
     # 请前往 https://aistudio.baidu.com/index/accessToken 查看“访问令牌”并替换
-    TOKEN = "6382cad74c452f2aea435944da565988fe4c38a2"
+    TOKEN = "xxxxxxxxxxxxxxxxx"
     output_image_path_list=[]
     # Determine the predict folder number
     base_dir = "model_runs_results/baidu_seg_runs"
@@ -57,4 +57,5 @@ if __name__ == "__main__":
     image2 = "upload_images/1754984861/image_2.jpg"
     damage_s_all,seg_output_image_path=baidu_seg_two_images(image1, image2)
     print(damage_s_all)
+
     print("seg_output_image_path:",seg_output_image_path)
