@@ -23,8 +23,8 @@ def extract_values(input_string):
 def big_model_ai_analysis(input_json):
     client = OpenAI(
          #api_key='766db1161c641fc86b98207681df4b6a89e81898',  # 含有 AI Studio 访问令牌，https://aistudio.baidu.com/account/accessToken,
-          api_key='6382cad74c452f2aea435944da565988fe4c38a2',
-         base_url="https://aistudio.baidu.com/llm/lmapi/v3",  # aistudio 大模型 api 服务域名
+          api_key='xxxxxxxxxxxxxxx',
+         base_url="xxxxxxxxxxxxxxxxxxxxxxx",  # aistudio 大模型 api 服务域名
     )
     #适合生长范围：空气温度[15–20°C]、土壤湿度[60–80%]、土壤温度[15–25°C]、土壤氮[0.1–0.2%]、土壤有效磷[20–50 mg/kg]、土壤有效钾[100–200 mg/kg]、土壤pH[5.5–6.5]。  不适合生长范围：空气温度（低于-5°C，高于35°C）、土壤湿度（低于40%，高于90%或积水）、土壤温度（低于5°C，高于30°C）、土壤氮（低于0.05%，高于0.3%）、土壤有效磷（低于10 mg/kg，高于100 mg/kg）、土壤有效钾（低于50 mg/kg，高于300 mg/kg）、土壤pH（低于5.0，高于7.5）
     #适合生长范围：空气温度[15–20°C]、空气湿度[60–80%]、土壤湿度[60–80%]、土壤温度[15–25°C]、土壤氮[0.1–0.2%]、土壤有效磷[20–50 mg/kg]、土壤有效钾[100–200 mg/kg]、土壤pH[5.5–6.5]、光照强度[10000–30000 lx]、空气二氧化碳含量[350–600 ppm] 不适合生长范围：空气温度(低于-5°C，高于35°C)、空气湿度(低于40%，高于90%)、土壤湿度(低于40%，高于90%或积水)、土壤温度(低于5°C，高于30°C)、土壤氮(低于0.05%，高于0.3%)、土壤有效磷(低于10 mg/kg，高于100 mg/kg)、土壤有效钾(低于50 mg/kg，高于300 mg/kg)、土壤pH(低于5.0，高于7.5)、光照强度(低于5000 lx，高于50000 lx)、空气二氧化碳含量(低于200 ppm，高于1000 ppm)
@@ -276,4 +276,5 @@ if __name__ == '__main__':
   input_json=process_json_data(json)
   w,x,b=big_model_ai_analysis(input_json)
   print("x=",x)
+
 
